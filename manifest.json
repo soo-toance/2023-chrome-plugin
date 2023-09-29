@@ -7,5 +7,17 @@
     "default_popup": "hello.html",
     "default_icon": "hello_extensions.png"
   },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "action1": {
+      "suggested_key": {
+        "default": "Ctrl+U",
+        "mac": "Command+Shift+0"
+      },
+      "description": "activate chrome plugin"
+    }
   }
 }
